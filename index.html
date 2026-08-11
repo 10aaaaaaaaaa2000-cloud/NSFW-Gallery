@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Image Gallery</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Image Gallery</h1>
+    <p class="subtitle">Images extracted from archives in <code>/content</code></p>
+  </header>
+
+  <main id="gallery" class="gallery">
+    <!-- Cards get injected here -->
+  </main>
+
+  <div id="status" class="status"></div>
+
+  <div class="scroll-controls">
+    <button id="scrollTopBtn" title="Scroll to top" aria-label="Scroll to top">&#8593;</button>
+    <button id="scrollBottomBtn" title="Scroll to bottom" aria-label="Scroll to bottom">&#8595;</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="content-list.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
